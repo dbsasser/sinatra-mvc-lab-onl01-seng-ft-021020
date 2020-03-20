@@ -2,7 +2,6 @@ class PigLatinizer
 
   def initialize(text)
     @text = text
-
   end
 
   def self.convert_to_pig_latin
