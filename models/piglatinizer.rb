@@ -2,7 +2,7 @@ class PigLatinizer
 
 
 
-  def convert_to_pig_latin
+  def convert_to_pig_latin(text)
     split_input = @text.split(" ")
     vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
     split_input.map! do |word|
