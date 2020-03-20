@@ -8,10 +8,10 @@ class PigLatinizer
     split_input = @text.split(" ")
     vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
     split_input.each do |word|
-      if vowels.include?(word.first)
+      if vowels.include?(word.[0])
         word = word + "way"
       else
-        word = word.substring(1) + word.first + "ay"
+        word = word.substring(1) + word[0] + "ay"
       end
     end
     split_input.join(" ")
