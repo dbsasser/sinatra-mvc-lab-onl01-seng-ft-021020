@@ -7,7 +7,7 @@ class App < Sinatra::Base
   end
 
   post '/piglatinize' do
-    @converted_text = params[:user_text]
+    @text = params[:user_text]
     erb :piglatinize
   end
 
