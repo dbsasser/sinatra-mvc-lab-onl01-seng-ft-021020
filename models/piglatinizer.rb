@@ -11,7 +11,7 @@ class PigLatinizer
       if vowels.include?(word[0])
         word = word + "way"
       else
-        word = word.substring(1) + word[0] + "ay"
+        word = word.slice(0) + word[0] + "ay"
       end
     end
     split_input.join(" ")
