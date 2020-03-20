@@ -1,11 +1,11 @@
 class PigLatinizer
 
-  def initialize(words)
-    @input = text
+  def initialize
+    
   end
 
   def self.convert_to_pig_latin
-    split_input = @input.split(" ")
+    split_input = @text.split(" ")
     vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
     split_input.each do |word|
       if vowels.include?(word.first)
