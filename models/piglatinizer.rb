@@ -16,5 +16,5 @@ class PigLatinizer
     end
     split_input.join(" ")
   end
-  
+
 end
