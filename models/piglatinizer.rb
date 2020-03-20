@@ -8,6 +8,8 @@ class PigLatinizer
     split_input.map! do |word|
       if vowels.include?(word[0])
         word = word + "way"
+      if !vowels.include?(word[0]) && !vowels.include?(word[1])
+        word = word[2..-1] + word[0] + word[1] + "ay"
       else
         word = word[1..-1] + word[0] + "ay"
       end
