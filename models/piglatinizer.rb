@@ -1,6 +1,6 @@
 class PigLatinizer
 
-  def initialize(text)
+  def initialize(:words)
     @input = text
   end
 
