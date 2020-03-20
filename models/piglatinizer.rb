@@ -1,6 +1,6 @@
 class PigLatinizer
 
-  
+
 
   def convert_to_pig_latin
     split_input = @text.split(" ")
