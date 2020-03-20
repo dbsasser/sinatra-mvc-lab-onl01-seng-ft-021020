@@ -8,10 +8,10 @@ class PigLatinizer
     split_input.map! do |word|
       if vowels.include?(word[0])
         word = word + "way"
-      elsif !vowels.include?(word[0]) && !vowels.include?(word[1])
-        word = word[2..-1] + word[0] + word[1] + "ay"
       else
-        word = word[1..-1] + word[0] + "ay"
+        vowel_index = word.index(/[aeiou]/)
+        front_part = word.slice!(0..vowel_index-1)
+        word + front_part + "ay"
       end
     end
     split_input.join(" ")
